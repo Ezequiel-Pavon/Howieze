@@ -1,9 +1,14 @@
-.body {
+.body{
     color: white;
     font-family: Times New Roman;
     background-color: black;
-}   
+    background-image: url('foto9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 
+}
 .container{
     
 }
@@ -38,3 +43,10 @@ absolute
 fixed
 sticky
 */
+
+
+#reloj{
+    font-size: 1pc;
+    font-family: Times New Roman;
+    margin-top: 20px;
+}
