@@ -1,6 +1,7 @@
 .body{
     color: rgb(0, 0, 0);
     font-family: Times New Roman;
+    font-size: 20px;
     background-color: rgb(255, 255, 255);
     /*background-image: url('foto9.jpg');*/
     background-size: cover;
@@ -34,19 +35,9 @@
 
 }
 
-
-
-/*
-Static
-Relative
-absolute
-fixed
-sticky
-*/
-
-
 #reloj{
     font-size: 1pc;
     font-family: Times New Roman;
     margin-top: 20px;
+    
 }
