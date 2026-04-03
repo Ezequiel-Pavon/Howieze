@@ -23,3 +23,5 @@ const opciones = {
 
 const hora = new Intl.DateTimeFormat("es-ES", opciones).format(new Date());
 document.getElementById("reloj").textContent = hora;
+
+document.addEventListener("contextmenu", (e) => e.preventDefault());
