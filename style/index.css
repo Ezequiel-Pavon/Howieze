@@ -1,14 +1,98 @@
 .body {
+  margin: 0;
+  padding: 0;
   color: rgb(0, 0, 0);
   font-family: Times New Roman;
   font-size: 20px;
   background-color: rgb(255, 255, 255);
-  /*background-image: url('foto9.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
+
+.hero-image {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #f2f2f2;
+}
+
+.page-content {
+  padding: 20px 20px 80px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 20px 8px;
+}
+
+.top-nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.language-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.language-toggle:hover {
+  background: #f3f3f3;
+}
+
 .container {
   text-align: center;
   display: flex;
@@ -34,6 +118,18 @@
   bottom: 10px;
   left: 10px;
   text-shadow: 0px 0px 0px black;
+}
+
+.home_link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.home_link a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .copyright a {

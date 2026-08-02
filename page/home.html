@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="icon" href="../img/me.ico" type="image/x-icon" />
+    <title>Howieze</title>
+    <style>
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+      }
+
+      .timer-row {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 1pc;
+      }
+
+      .hero-image {
+        height: 400px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <button id="lang-toggle" class="language-toggle" type="button" aria-label="Toggle language">ES / EN</button>
+    <main class="page-content">
+      <div class="container">
+      <h1 class="title" data-i18n="title">Eduardo Howard Ezequiel Pavon</h1>
+      <img class="hero-image" src="../img/home by Peter Aldington.jpg" alt="King Leonidas" />
+      <div class="timer-row">
+        <h3 class="subtitle" data-i18n="subtitle">Time in Argentina:</h3>
+        <div id="reloj"></div>
+      </div>
+    </div>
+
+    </main>
+    <div class="copyright">
+      <a href="https://www.youtube.com/@howieze">© Howieze 2026</a>
+    </div>
+
+    <div class="footerlinks">
+      <a href="about.html" data-i18n="aboutLink">About</a>
+      //
+      <a href="blog.html" data-i18n="blogLink">Blog</a>
+      //
+      <a href="gear.html" data-i18n="gearLink">Gear</a>
+      //
+      <a href="faq.html" data-i18n="faqLink">FAQ</a>
+      //
+      <a href="contact.html" data-i18n="contactLink">Contact</a>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

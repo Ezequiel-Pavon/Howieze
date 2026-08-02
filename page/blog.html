@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Eduardo Howard</title>
-    <link rel="icon" href="me.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/index.css" />
+    <title>Blog - Howieze</title>
+    <link rel="icon" href="../img/me.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/index.css" />
     <style>
       .blog-container {
         width: 700px;
+        max-width: 90%;
         margin: 40px auto;
         background: white;
         border: 1px solid #ccc;
@@ -60,33 +61,23 @@
         border-top: 1px solid #000;
         margin: 30px 0;
       }
-
-      .home_link {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-      }
-
-      .home_link a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        margin: 0 5px;
-      }
     </style>
   </head>
   <body class="body">
-    <div class="blog-container">
+    <button id="lang-toggle" class="language-toggle" type="button" aria-label="Toggle language">ES / EN</button>
+    <main class="page-content">
+      <div class="blog-container">
       <div class="blog-header">
-        <h1>BLOG</h1>
+        <h1 data-i18n="blogTitle">BLOG</h1>
       </div>
 
       <div class="blog-post">
         <div class="blog-post-header">
-          <h2>First semester</h2>
+          <h2 data-i18n="blogPostTitle1">First semester</h2>
           <span class="date">March 16, 2026</span>
         </div>
         <div class="blog-post-content">
-          <p>Primer video a principios de invierno.</p>
+          <p data-i18n="blogPost1">Primer video a principios de invierno.</p>
         </div>
       </div>
 
@@ -94,19 +85,20 @@
 
       <div class="blog-post">
         <div class="blog-post-header">
-          <h2>Blog Iniciado</h2>
+          <h2 data-i18n="blogPostTitle2">Blog Iniciado</h2>
           <span class="date">January 1, 2026</span>
         </div>
         <div class="blog-post-content">
-          <p>Sup, nuevo blog! Aca voy a ir publicando actualizaciones.</p>
+          <p data-i18n="blogPost2">Sup, nuevo blog! Aca voy a ir publicando actualizaciones.</p>
         </div>
       </div>
     </div>
+    </main>
     <div class="copyright">
       <a href="https://www.youtube.com/@howieze">© Howieze 2026</a>
     </div>
     <div class="home_link">
-      <a href="home.html">home</a>
+      <a href="home.html" data-i18n="homeLink">Home</a>
     </div>
   </body>
 </html>

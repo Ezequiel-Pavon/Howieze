@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="icon" href="../img/me.ico" type="image/x-icon" />
+  <title>Contacto - Howieze</title>
+  <style>
+    .page-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 78vh;
+      padding: 24px 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding: 28px 24px;
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #dcdcdc;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .texto {
+      max-width: 320px;
+      text-align: left;
+      font-size: 1.15rem;
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    .social-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .social-item a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+      font-size: 1rem;
+    }
+
+    .social-item a:hover {
+      opacity: 0.85;
+    }
+
+    .social-item.gmail a:hover {
+      color: #d93025;
+      border-color: #d93025;
+    }
+
+    .social-item.linkedin a:hover {
+      color: #0a66c2;
+      border-color: #0a66c2;
+    }
+
+    .social-item.pinterest a:hover {
+      color: #e60023;
+      border-color: #e60023;
+    }
+
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      filter: grayscale(100%);
+      opacity: 0.9;
+    }
+
+    .contact-image {
+      width: 280px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body class="body">
+  <button id="lang-toggle" class="language-toggle" type="button" aria-label="Toggle language">ES / EN</button>
+  <main class="page-content">
+    <div class="container">
+      <ul class="social-list">
+        <li class="social-item gmail">
+          <a href="mailto:eduardoezequielpavon20044@gmail.com">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@9/icons/gmail.svg" alt="Gmail" />
+            Gmail-box
+          </a>
+        </li>
+        <li class="social-item linkedin">
+          <a href="https://www.linkedin.com/in/eduardohowardezequielpavon/" target="_blank" rel="noopener noreferrer">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@9/icons/linkedin.svg" alt="LinkedIn" />
+            LinkedIn-Prof
+          </a>
+        </li>
+        <li class="social-item pinterest">
+          <a href="https://ar.pinterest.com/howieze/" target="_blank" rel="noopener noreferrer">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@9/icons/pinterest.svg" alt="Pinterest" />
+            Pinterest 
+          </a>
+        </li>
+      </ul>
+      <img class="contact-image" src="../gif/carshark.jpg" alt="gif de contacto" />
+    </div>
+  </main>
+  <div class="copyright">
+    <a href="https://www.youtube.com/@howieze">© Howieze 2026</a>
+  </div>
+  <div class="home_link">
+    <a href="home.html" data-i18n="homeLink">Home</a>
+  </div>
+</body>
+</html>

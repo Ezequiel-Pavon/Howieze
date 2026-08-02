@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="icon" href="../img/me.ico" type="image/x-icon" />
+    <title>About - Howieze</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 20px;
+        min-height: 70vh;
+      }
+
+      .imagen {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .texto {
+        max-width: 600px;
+        margin: 0;
+        text-align: left;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <button id="lang-toggle" class="language-toggle" type="button" aria-label="Toggle language">ES / EN</button>
+    <main class="page-content">
+      <div class="container">
+      <img src="../img/me.jpeg" alt="Eduardo Howard" class="imagen" />
+      <p class="texto" data-i18n="aboutText">
+        Eduardo Howard Ezequiel Pavón es estudiante de Ingeniería Mecánica y Analista Programador Universitario en la Universidad Nacional de La Plata (UNLP). Su principal interés se centra en el desarrollo de software, la arquitectura de sistemas y las tecnologías de código abierto. Actualmente participa como investigador en el LIFIA (Laboratorio de Investigación y Formación en Informática Avanzada), donde colabora en proyectos vinculados a la informática y la investigación aplicada.
+      </p>
+    </div>
+
+    </main>
+    <div class="copyright">
+      <a href="https://www.youtube.com/@howieze">© Howieze 2026</a>
+    </div>
+    <div class="home_link">
+      <a href="home.html" data-i18n="homeLink">home</a>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
