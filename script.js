@@ -17,11 +17,11 @@ window.onload = actualizarHora;
 // Lista de imágenes que pueden usarse como hero diario.
 const heroImageSources = [
   "../img/home by Peter Aldington.jpg",
-  "../img/Manuel Esteve Guerrero.jpg",
-  "../img/Leonidas.jpg",
+  //"../img/Manuel Esteve Guerrero.jpg",
+  //"../img/Leonidas.jpg",
   //"../img/Steve.jpg",
   //"../img/James.jpg",
-  "../img/Libertador.jpg",
+  //"../img/Libertador.jpg",
   "../img/Messi.jpg",
 ];
 
@@ -109,7 +109,8 @@ const translations = {
     blogLink: "Blog",
     gearLink: "Equipo",
     faqLink: "Preguntas",
-    contactLink: "Contacto"
+    contactLink: "Contacto",
+    madeBy: "Hecho por",
   },
   en: {
     title: "Eduardo Howard Ezequiel Pavon",
@@ -148,7 +149,8 @@ const translations = {
     blogLink: "Blog",
     gearLink: "Gear",
     faqLink: "FAQ",
-    contactLink: "Contact"
+    contactLink: "Contact",
+    madeBy: "made by"
   }
 };
 
