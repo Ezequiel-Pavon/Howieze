@@ -4,11 +4,13 @@ function actualizarHora() {
   if (!reloj) return;
 
   const ahora = new Date();
-  const horas = ahora.getHours().toString().padStart(2, "0");
+  const horas24 = ahora.getHours();
+  const horas = ((horas24 + 11) % 12 + 1).toString().padStart(2, "0");
   const minutos = ahora.getMinutes().toString().padStart(2, "0");
   const segundos = ahora.getSeconds().toString().padStart(2, "0");
+  const ampm = horas24 >= 12 ? "PM" : "AM";
 
-  reloj.textContent = `${horas}:${minutos}:${segundos}`;
+  reloj.textContent = `${horas}:${minutos}:${segundos} ${ampm}`;
 }
 
 setInterval(actualizarHora, 1000);
@@ -62,12 +64,13 @@ const opciones = {
   hour: "2-digit",
   minute: "2-digit",
   second: "2-digit",
+  hour12: true,
 };
 
 const reloj = document.getElementById("reloj");
 if (reloj) {
   const hora = new Intl.DateTimeFormat("es-ES", opciones).format(new Date());
-  reloj.textContent = hora;
+  reloj.textContent = `${hora} ${new Date().getHours() >= 12 ? "PM" : "AM"}`;
 }
 
 // Textos traducidos para el cambio de idioma.
