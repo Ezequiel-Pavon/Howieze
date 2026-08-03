@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +8,23 @@
     <title>Gear - Howieze</title>
     <style>
       .gear-content {
-        max-width: 800px;
+        max-width: 900px;
         margin: 40px auto;
         padding: 20px;
+      }
+
+      .gear-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .gear-section {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        background: #fafafa;
       }
 
       .gear-list {
@@ -21,6 +35,12 @@
       .gear-list li {
         margin-bottom: 8px;
       }
+
+      @media (max-width: 600px) {
+        .gear-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body class="body">
@@ -29,41 +49,43 @@
       <div class="gear-content">
         <b data-i18n="gearTitle">GEAR</b>
 
-        <section class="gear-section">
-          <h3>Desk Setup</h3>
-          <ul class="gear-list">
-            <li>Laptop Lenovo x1 Carbon</li>
-            <li>Monitor stand</li>
-            <li>Mechanical keyboard</li>
-          </ul>
-        </section>
+        <div class="gear-grid">
+          <section class="gear-section">
+            <h3 data-i18n="gearDeskSetupTitle">Configuración de escritorio</h3>
+            <ul class="gear-list">
+              <li data-i18n="gearDeskSetupItem1">Laptop Lenovo x1 Carbon</li>
+              <li data-i18n="gearDeskSetupItem2">Monitor stand</li>
+              <li data-i18n="gearDeskSetupItem3">Mechanical keyboard</li>
+            </ul>
+          </section>
 
-        <section class="gear-section">
-          <h3>Content Creation</h3>
-          <ul class="gear-list">
-            <li>Auriculares inalámbricos</li>
-            <li>Microphone</li>
-            <li>Webcam</li>
-          </ul>
-        </section>
+          <section class="gear-section">
+            <h3 data-i18n="gearContentCreationTitle">Creación de contenido</h3>
+            <ul class="gear-list">
+              <li data-i18n="gearContentCreationItem1">Auriculares inalámbricos</li>
+              <li data-i18n="gearContentCreationItem2">Micrófono</li>
+              <li data-i18n="gearContentCreationItem3">Cámara web</li>
+            </ul>
+          </section>
 
-        <section class="gear-section">
-          <h3>Computers</h3>
-          <ul class="gear-list">
-            <li>Laptop Lenovo x1 Carbon</li>
-            <li>External SSD</li>
-          </ul>
-        </section>
+          <section class="gear-section">
+            <h3 data-i18n="gearComputersTitle">Computadoras</h3>
+            <ul class="gear-list">
+              <li data-i18n="gearComputersItem1">Laptop Lenovo x1 Carbon</li>
+              <li data-i18n="gearComputersItem2">External SSD</li>
+            </ul>
+          </section>
 
-        <section class="gear-section">
-          <h3>EDC</h3>
-          <ul class="gear-list">
-            <li>Samsung Galaxy A14</li>
-            <li>Key organizer</li>
-          </ul>
-        </section>
+          <section class="gear-section">
+            <h3 data-i18n="gearEdcTitle">EDC</h3>
+            <ul class="gear-list">
+              <li data-i18n="gearEdcItem1">Samsung Galaxy A14</li>
+              <li data-i18n="gearEdcItem2">Key organizer</li>
+            </ul>
+          </section>
+        </div>
 
-        <p class="last-updated">Last updated: 2026-08-02</p>
+        <p class="last-updated" data-i18n="gearLastUpdated">Última actualización: 2026-08-02</p>
       </div>
     </main>
     <div class="copyright">
@@ -72,5 +94,7 @@
     <div class="home_link">
       <a href="home.html" data-i18n="homeLink">Home</a>
     </div>
+
+    <script src="../script.js"></script>
   </body>
 </html>
