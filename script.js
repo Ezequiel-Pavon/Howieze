@@ -19,6 +19,7 @@ window.onload = actualizarHora;
 // Lista de imágenes que pueden usarse como hero diario.
 const heroImageSources = [
   "../img/home by Peter Aldington.jpg",
+   "../img/ChangetheWorld/Spartan.jpg",
   //"../img/ChangeTheWorld/Manuel Esteve Guerrero.jpg", 
   //"../img/ChangeTheWorld/Leonidas.jpg",
   //"../img/ChangeTheWorld/James.jpg",
