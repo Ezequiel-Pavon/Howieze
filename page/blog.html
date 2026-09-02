@@ -61,6 +61,37 @@
         border-top: 1px solid #000;
         margin: 30px 0;
       }
+
+      .blog-video {
+        width: 100%;
+        max-width: 560px;
+        margin: 30px auto 0;
+        border: 1px solid #ccc;
+        background: #f7f7f7;
+        aspect-ratio: 16 / 9;
+      }
+
+      .blog-video iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (max-width: 600px) {
+        .blog-container {
+          padding: 20px;
+        }
+
+        .blog-post h2 {
+          display: block;
+        }
+
+        .blog-post .date {
+          display: block;
+          margin: 5px 0 0;
+        }
+      }
     </style>
   </head>
   <body class="body">
@@ -86,11 +117,21 @@
       <div class="blog-post">
         <div class="blog-post-header">
           <h2 data-i18n="blogPostTitle2">Blog iniciado</h2>
-          <span class="date" data-i18n="blogDate2">1 de enero de 2026</span>
+          <span class="date" data-i18n="blogDate2">2 de Septiembre de 2026</span>
         </div>
         <div class="blog-post-content">
-          <p data-i18n="blogPost2">Sup, nuevo blog! Acá voy a ir publicando actualizaciones.</p>
+          <p data-i18n="blogPost2">Este video de Jon es muy cinematografico me encanta</p>
         </div>
+      </div>
+
+      <div class="blog-video" aria-label="Video de YouTube">
+        <iframe
+          src="https://www.youtube.com/embed/7qWFOYLowEc?si=PswKpy7tjr87Mlck" 
+          title="Video de YouTube"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
     </main>
