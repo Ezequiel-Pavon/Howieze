@@ -228,7 +228,7 @@ const translations = {
 };
 
 function detectPreferredLanguage() {
-  return "es";
+  return "en";
 }
 
 let currentLang = detectPreferredLanguage();
