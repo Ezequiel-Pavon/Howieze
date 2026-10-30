@@ -76,7 +76,7 @@ if (reloj) {
 // Textos traducidos para el cambio de idioma.
 const translations = {
   es: {
-    title: "Eduardo Howard Ezequiel Pavon",
+    title: "Eduardo Howard Ezequiel Pavón",
     subtitle: "Hora en Argentina:",
     aboutText: "Eduardo Howard Ezequiel Pavón es estudiante de Ingeniería Mecánica y Analista Programador Universitario en la Universidad Nacional de La Plata (UNLP). Su principal interés se centra en el desarrollo de software, la arquitectura de sistemas y las tecnologías de código abierto. Actualmente participa como investigador en el LIFIA (Laboratorio de Investigación y Formación en Informática Avanzada), donde colabora en proyectos vinculados a la informática y la investigación aplicada.",
     blogTitle: "BLOG",
@@ -151,7 +151,7 @@ const translations = {
     faqThanks: "¡gracias!",
   },
   en: {
-    title: "Eduardo Howard Ezequiel Pavon",
+    title: "Eduardo Howard Ezequiel Pavón",
     subtitle: "Time in Argentina:",
     aboutText: "Eduardo Howard Ezequiel Pavón is a Mechanical Engineering student and a University Programmer Analyst at the National University of La Plata (UNLP). His main interests lie in software development, systems architecture, and open-source technologies. He currently participates as a researcher at LIFIA (Laboratory for Research and Training in Advanced Computing), where he collaborates on projects related to computer science and applied research.",
     blogTitle: "BLOG",
